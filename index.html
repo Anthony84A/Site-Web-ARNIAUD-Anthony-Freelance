@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Anthony Arniaud - Développeur Web Freelance, création de sites web modernes et performants.">
-    <title>Anthony Arniaud - Développeur Web Freelance</title>
+    <meta name="description" content="Anthony Arniaud - Développeur Web Freelance. Création de sites web modernes, performants et responsive. Spécialisé en HTML, CSS, JavaScript et design UX/UI.">
+    <meta name="keywords" content="développeur web freelance, création site web, web design, HTML, CSS, JavaScript">
+    <meta name="author" content="Anthony Arniaud">
+    <meta property="og:title" content="Anthony Arniaud - Développeur Web Freelance">
+    <meta property="og:description" content="Créez votre site web moderne et performant avec un développeur web freelance passionné.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="French">
+    <title>Anthony Arniaud - Développeur Web Freelance | Création Sites Web</title>
+    <link rel="canonical" href="https://anthony-arniaud.fr">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo"><a href="#"><img src="./assets/logo.png" alt="logo"></a></div>
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="logo">
+        <a href="#accueil" title="Retour à l'accueil"><img src="./assets/logo.png" alt="Anthony Arniaud - Développeur Web Freelance"></a>
+      </div>
       <ul class="nav-links">
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#services">Services</a></li>
@@ -19,18 +34,94 @@
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   </header>
 
   <main>
-    <div class="big-hero-bg">
-        <section class="hero">
-            <h1>Développeur Web Freelance</h1>
-        </section>
+    <div class="big-hero-bg" id="accueil">
+      <section class="hero">
+        <h1 class="hero-title">Développeur Web <span class="highlight">Freelance</span></h1>
+        <p class="hero-subtitle fade-in-up">Créez votre présence digitale avec un <span class="highlight-text">expert en développement web</span></p>
+      </section>
     </div>
-  </main>
-  
 
+    <section class="section-content fade-in-up" id="services">
+      <h2>Services</h2>
+      <p>C'est du contenu supplémentaire pour pouvoir scroller.</p>
+    </section>
+    
+    <section class="section-content section-alt fade-in-up" id="competences">
+      <h3>Compétences</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </section>
+    
+    <section class="section-content fade-in-up" id="portfolio">
+      <h2>Portfolio</h2>
+      <p>Voici beaucoup plus de contenu pour tester le flou lors du scroll.</p>
+      <p>Continuez à scroller pour voir l'effet sur le background du hero.</p>
+      <p>Le flou devrait être visible maintenant !</p>
+    </section>
+
+    <section class="section-content section-alt fade-in-up" id="apropos">
+      <h2>À propos</h2>
+      <p>Bienvenue sur mon portfolio. Je suis un développeur web passionné par la création de sites modernes et performants.</p>
+      <p>Avec plusieurs années d'expérience en développement web, j'aide les entreprises et les entrepreneurs à construire leur présence digitale.</p>
+      <p>Mon approche combine technologie, design et stratégie pour créer des solutions web exceptionnelles.</p>
+    </section>
+
+    <section class="section-content fade-in-up" id="contact">
+      <h2>Contact</h2>
+      <p>Vous avez un projet ? Parlons-en !</p>
+      <p>N'hésitez pas à me contacter pour discuter de votre projet web.</p>
+      <p>Email: <span class="highlight-text">contact@anthony-arniaud.fr</span></p>
+      <p>Téléphone: <span class="highlight-text">+33 6 XX XX XX XX</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <a href="#accueil" class="footer-logo"><img src="./assets/logo.png" alt="Anthony Arniaud - Développeur Web Freelance"></a>
+        <p>Développeur Web Freelance spécialisé dans la création de sites modernes et performants.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:contact@anthony-arniaud.fr">contact@anthony-arniaud.fr</a></p>
+        <p>Téléphone: <a href="tel:+33612345678">+33 6 XX XX XX XX</a></p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Réseaux Sociaux</h4>
+        <ul class="social-links">
+          <li><a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="#" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Anthony Arniaud. Tous droits réservés.</p>
+    </div>
+  </footer>
+  
   <script src="script.js"></script>
 </body>
 
