@@ -68,6 +68,28 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ================================
+  // ANIMATIONS DES CARDS AU SCROLL
+  // ================================
+  const cardObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add("card-visible");
+        }, index * 100);
+        cardObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.2,
+    rootMargin: "0px 0px -50px 0px"
+  });
+
+  // Observer toutes les cards
+  document.querySelectorAll(".glass-panel").forEach(card => {
+    cardObserver.observe(card);
+  });
+
+  // ================================
   // SMOOTH SCROLL POUR LES LIENS
   // ================================
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
